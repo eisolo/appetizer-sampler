@@ -1,7 +1,7 @@
 {
-  "name": "codyhouse-framework",
+  "name": "appetizer",
   "version": "3.0.3",
-  "description": "A lightweight front-end framework for building accessible, bespoke interfaces.",
+  "description": "",
   "main": "index.js",
   "keywords": [
     "scss",
@@ -28,7 +28,7 @@
   "devDependencies": {
     "autoprefixer": "^9.4.3",
     "browser-sync": "^2.26.3",
-    "codyhouse-framework": "^2.8.9",
+    "codyhouse-framework": "^2.9.1",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
@@ -45,5 +45,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodyHouse/codyhouse-framework.git"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.2"
   }
 }

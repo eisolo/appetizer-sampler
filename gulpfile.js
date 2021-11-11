@@ -45,13 +45,13 @@ gulp.task('sass', function() {
 });
 // This task is used to combine all js files in a single scripts.min.js.
 gulp.task('scripts', function() {
-  return gulp.src([utilJsPath+'/util.js', componentsJsPath])
-  .pipe(concat('scripts.js'))
+  return gulp.src([utilJsPath+'assets/js/util.js', componentsJsPath])
+  .pipe(concat('assets/js/scripts.js'))
   .pipe(gulp.dest(scriptsJsPath))
   .pipe(browserSync.reload({
     stream: true
   }))
-  .pipe(rename('scripts.min.js'))
+  .pipe(rename('assets/js/scripts.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest(scriptsJsPath))
   .pipe(browserSync.reload({
@@ -97,9 +97,9 @@ gulp.task('dist', async function(){
 
 function purgeCSS() {
   return new Promise(function(resolve, reject) {
-    var stream = gulp.src(cssFolder+'/style.css')
+    var stream = gulp.src(cssFolder+'assets/css/style.css')
     .pipe(purgecss({
-      content: ['*.html', scriptsJsPath+'/scripts.js'],
+      content: ['*.html', scriptsJsPath+'assets/js/scripts.js'],
       safelist: {
         standard: ['.is-hidden', '.is-visible'],
         deep: [/class$/],
@@ -107,7 +107,7 @@ function purgeCSS() {
       },
       defaultExtractor: content => content.match(/[\w-/:%@]+(?<!:)/g) || []
     }))
-    .pipe(gulp.dest(distFolder+'/assets/css'));
+    .pipe(gulp.dest(distFolder+'assets/css'));
     
     stream.on('finish', function() {
       resolve();
@@ -117,7 +117,7 @@ function purgeCSS() {
 
 function minifyJs() {
   return new Promise(function(resolve, reject) {
-    var stream = gulp.src(scriptsJsPath+'/scripts.js')
+    var stream = gulp.src(scriptsJsPath+'assets/js/scripts.js')
     .pipe(uglify())
     .pipe(gulp.dest(distFolder+'/assets/js'));
     
@@ -129,7 +129,7 @@ function minifyJs() {
 
 function moveJS() {
   return new Promise(function(resolve, reject) {
-    var stream = gulp.src([scriptsJsPath+'/*.js', '!'+scriptsJsPath+'/scripts.js', '!'+scriptsJsPath+'/scripts.min.js'], { allowEmpty: true })
+    var stream = gulp.src([scriptsJsPath+'/*.js', '!'+scriptsJsPath+'assets/js/scripts.js', '!'+scriptsJsPath+'assets/js/scripts.min.js'], { allowEmpty: true })
     .pipe(gulp.dest(assetsFolder+'js'));
     
     stream.on('finish', function() {
