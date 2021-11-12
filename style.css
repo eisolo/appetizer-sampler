@@ -1,15 +1,10 @@
+body {margin: 0;padding: 0;}
+svg {aspect-ratio: 9/16;object-fit: cover;}
+
+g {transition: all .2s ease;}
+
 body {
-    margin: 0;
-    padding: 0;
-}
-
-svg {
-    aspect-ratio: 9/16;
-    object-fit: cover;
-}
-
-g {
-    transition: all .2s ease;
+    cursor: url('/images/fork-smaller.png');
 }
 
 #spine-blue_Image,
