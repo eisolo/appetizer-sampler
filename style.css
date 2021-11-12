@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+}
+
+g {
+    transition: all .2s ease;
+}
+
+#spine-blue_Image,
+#spine-bronze_Image,
+#spine-green_Image,
+#clip-cyan_Image,
+#clip-bronze_Image,
+#clip-purple_Image,
+#clip-green_Image,
+#clip-blue_Image,
+#open-entropic-tail_Image,
+#open-black-timascus-2_Image,
+#open-flame_Image,
+#open-flamingo_Image,
+#open-frosty_Image,
+#open-kinetic-blue_Image,
+#open-jeweled_Image {
+    filter: drop-shadow(0 0 6px transparent);
+}
+
+#spine-blue_Image:hover,
+#spine-bronze_Image:hover,
+#spine-green_Image:hover,
+#clip-cyan_Image:hover,
+#clip-bronze_Image:hover,
+#clip-purple_Image:hover,
+#clip-green_Image:hover,
+#clip-blue_Image:hover,
+#open-entropic-tail_Image:hover,
+#open-black-timascus-2_Image:hover,
+#open-flame_Image:hover,
+#open-flamingo_Image:hover,
+#open-frosty_Image:hover,
+#open-kinetic-blue_Image:hover,
+#open-jeweled_Image:hover {
+    filter: drop-shadow(0 0 6px rgba(0,0,0,.6));
+}
