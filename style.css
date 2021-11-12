@@ -4,7 +4,7 @@ svg {aspect-ratio: 9/16;object-fit: cover;}
 g {transition: all .2s ease;}
 
 body {
-    cursor: url('/images/fork-smaller-100.png', pointer);
+    cursor: url('/images/fork-smaller-100.png'), pointer;
 }
 
 #spine-blue_Image,
