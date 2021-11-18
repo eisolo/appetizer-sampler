@@ -44,8 +44,15 @@ body {
 }
 
 #mc_embed_signup {
-    background:#fff;
-    clear:left;
-    font:14px Arial,sans-serif;
-    width:500px;
+    background: rgba(255,255,255,.7);
+    clear: left;
+    font: 24px Arial,sans-serif;
+    position: absolute;
+    z-index: 100;
+    top: 170%;
+    left: 25%;
+    padding: 170px 75px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0px 0px 14px 8px rgba(0,0,0,.5);
 }
