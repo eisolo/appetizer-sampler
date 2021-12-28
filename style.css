@@ -1,5 +1,9 @@
 html {margin: 0;padding: 0;}
-svg {aspect-ratio: 9/16;object-fit: cover;}
+svg {
+	aspect-ratio: 9/16;
+	object-fit: cover;
+	display: block;
+}
 
 g {transition: all .2s ease;}
 
@@ -75,7 +79,7 @@ body {
 
 
 
-.tool-tip {
+/*.tool-tip {
 	color: #fff;
 	width: 139px;
 	z-index: 13000;
@@ -116,5 +120,5 @@ body {
 	font-size: 11px;
 	padding: 4px 8px 8px;
 	background: #CFDFA7;
-}
+}*/
 
