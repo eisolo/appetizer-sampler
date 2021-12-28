@@ -91,8 +91,10 @@ body {
 #mc_embed_signup_scroll {
     display: flex;
     flex-direction: row;
-    column-gap: .75rem;
     justify-content: center;
+	column-gap: .75rem;
+	row-gap: .75rem;
+	flex-wrap: wrap;
 }
 
 #mc-embedded-subscribe {
