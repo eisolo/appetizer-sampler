@@ -54,6 +54,8 @@ body {
 #open-kinetic-blue_Image:hover,
 #open-jeweled_Image:hover {
     filter: drop-shadow(0 0 6px rgba(0,0,0,.6));
+	cursor: url('/images/fork-tiny-angled.png'), pointer;
+
 }
 
 #mc_embed_signup {
