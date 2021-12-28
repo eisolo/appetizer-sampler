@@ -34,7 +34,8 @@ body {
 #open-flamingo_Image,
 #open-frosty_Image,
 #open-kinetic-blue_Image,
-#open-jeweled_Image {
+#open-jeweled_Image,
+#open-entropic_Image {
     filter: drop-shadow(0 0 6px transparent);
 }
 
@@ -52,7 +53,8 @@ body {
 #open-flamingo_Image:hover,
 #open-frosty_Image:hover,
 #open-kinetic-blue_Image:hover,
-#open-jeweled_Image:hover {
+#open-jeweled_Image:hover,
+#open-entropic_Image:hover {
     filter: drop-shadow(0 0 6px rgba(0,0,0,.6));
 	cursor: url('/images/fork-tiny-angled.png'), pointer;
 
